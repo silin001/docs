@@ -8,7 +8,12 @@ jobs:
       uses: actions/checkout@master
 
     - name: vuepress-deploy
-      uses: jenkey2011/vuepress-deploy@master
+      # uses: jenkey2011/vuepress-deploy@master
+      uses: silin001.github.io@main
+      # with:
+      #     BRANCH: main
+      #     FOLDER: docs/.vuepress/dist
+      #     ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: silin001.github.io
