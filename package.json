@@ -6,7 +6,7 @@
   "author": "sisi <862956812@11.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "vuepress dev docs",
+    "dev": "vuepress dev docs --temp .temp",
     "build": "vuepress build docs"
   },
   "devDependencies": {
