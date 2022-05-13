@@ -9,7 +9,7 @@ jobs:
 
     - name: vuepress-deploy
       # uses: jenkey2011/vuepress-deploy@master
-      uses: silin001.github.io@main
+      uses: JamesIves/github-pages-deploy-action@master
       # with:
       #     BRANCH: main
       #     FOLDER: docs/.vuepress/dist
