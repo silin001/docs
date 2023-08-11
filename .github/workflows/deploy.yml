@@ -26,16 +26,16 @@ jobs:
     steps:
       - name: 获取源码
         uses: actions/checkout@v3
-       #步骤2  安装node并指定版本
+      #步骤2  安装node并指定版本
       - name: 安装node并指定版本
         uses: actions/setup-node@v3 # 安装node
         with:
           node-version: "16.x" # 指定node版本 不指定使用默认版本
-      - name: -----测试输出
-        run: |
-          node -v
-          npm -v
-          echo '哈哈哈哈'
+      # - name: -----测试输出
+      #   run: |
+      #     node -v
+      #     npm -v
+      #     echo '哈哈哈哈'
       - run: yarn
       - run: yarn build
       # - name: 下载依赖和打包
