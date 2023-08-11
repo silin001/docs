@@ -5,7 +5,9 @@ module.exports = {
   head: [ // 注入到当前页面的 HTML <head> 中的标签
     // ['link', { rel: 'icon', href: '/logo.jpg' }], // 增加一个自定义的 favicon(网页标签的图标)
   ],
-  base: './', // 这是部署到github相关的配置
+  // 默认 /  https://<USERNAME or GROUP>.github.io/
+  // 如果你打算发布到 https://<USERNAME or GROUP>.github.io/<REPO>/（也就是说你的仓库在 https://github.com/<USERNAME>/<REPO>），则将 base 设置为 "/<REPO>/"。
+  base: '/vuePress-blog/',
   markdown: {
     lineNumbers: false // 代码块显示行号
   },
