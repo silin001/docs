@@ -30,12 +30,13 @@ jobs:
       - name: -----测试输出
         run: |
           node -v
+          npm -v
           echo '哈哈哈哈'
 
       - name: 下载依赖和打包
         run: |
-          yarn
-          yarn build
+          npm install
+          npm run build
 
       - name: 部署
         uses: JamesIves/github-pages-deploy-action@releases/v3
