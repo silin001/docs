@@ -16,6 +16,10 @@ git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io
 # git@github.com:silin001/silin001.github.io.git
-git push -f git@github.com:silin001/silin001.github.io.git main
+
+# git push -f git@github.com:silin001/silin001.github.io.git main
+
+# 发布到gh-pages分支
+git push -f git@github.com:silin001/vuePress-blog.git master:gh-pages
 
 cd ../ && rm -rf dist

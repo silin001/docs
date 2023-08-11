@@ -1,19 +1,18 @@
-name: deploy
-on: [push]  // 推送代码触发脚本
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@master
+# name: deploy
+# on: [push]  // 推送代码触发脚本
+# jobs:
+#   build-and-deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: Checkout
+#       uses: actions/checkout@master
 
-    - name: vuepress-deploy
-      uses: jenkey2011/vuepress-deploy@master
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} // github Token
-        TARGET_REPO: silin001/silin001.github.io  // 仓库
+#     - name: vuepress-deploy
+#       uses: jenkey2011/vuepress-deploy@master
+#       env:
+#         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} // github Token
+#         TARGET_REPO: silin001/silin001.github.io  // 仓库
 
-        TARGET_BRANCH: main    // build 之后推到的分支名
-        BUILD_SCRIPT: yarn && yarn build
-        BUILD_DIR: src/.vuepress/dist/     //build 之后的目录
-        # CNAME: www.ydlcq.cn
+#         TARGET_BRANCH: main    // build 之后推到的分支名
+#         BUILD_SCRIPT: yarn && yarn build
+#         BUILD_DIR: src/.vuepress/dist/     //build 之后的目录
