@@ -20,27 +20,27 @@ jobs:
           commit_message: 自动部署(cicd) # 部署时的 git 提交信息，自由填写
 
       # 同步gitee
-      - name: 同步gitee【Sync to Gitee】
-        uses: wearerequired/git-mirror-action@master
-        env:
-          # 注意在 Settings->Secrets 配置 GITEE_RSA_PRIVATE_KEY
-          SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
-        with:
-          # 注意替换为你的 GitHub 源仓库地址
-          source-repo: git@github.com:silin001/docs.git
-          # 注意替换为你的 Gitee 目标仓库地址
-          destination-repo: git@gitee.com:sisi001/docs.git
-
-      # - name: Sync to Gitee
-      #   uses: Yikun/hub-mirror-action@master
+      # - name: 同步gitee【Sync to Gitee】
+      #   uses: wearerequired/git-mirror-action@master
+      #   env:
+      #     # 注意在 Settings->Secrets 配置 GITEE_RSA_PRIVATE_KEY
+      #     SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
       #   with:
-      #     src: "github/silin001"
-      #     dst: "gitee/sisi001"
-      #     dst_key: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
-      #     dst_token: ${{ secrets.DEPLOY_SECRET }}
-      #     static_list: "docs"
-      #     force_update: true
-      #     debug: true
+      #     # 注意替换为你的 GitHub 源仓库地址
+      #     source-repo: git@github.com:silin001/docs.git
+      #     # 注意替换为你的 Gitee 目标仓库地址
+      #     destination-repo: git@gitee.com:sisi001/docs.git
+
+      - name: Sync to Gitee
+        uses: Yikun/hub-mirror-action@master
+        with:
+          src: "github/silin001"
+          dst: "gitee/sisi001"
+          dst_key: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
+          dst_token: ${{ secrets.DEPLOY_SECRET }}
+          static_list: "docs"
+          force_update: true
+          debug: true
       # gitee自动部署
       - name: Build Gitee Pages
         uses: yanglbme/gitee-pages-action@main
