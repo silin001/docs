@@ -20,7 +20,7 @@ jobs:
           commit_message: 自动部署(cicd) # 部署时的 git 提交信息，自由填写
 
       # github代码同步 gitee
-      - name: 同步gitee【Sync to Gitee】
+      - name: Sync to Gitee
         uses: wearerequired/git-mirror-action@master
         env:
           # 注意在 Settings->Secrets 配置 GITEE_RSA_PRIVATE_KEY
