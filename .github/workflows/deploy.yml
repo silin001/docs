@@ -31,7 +31,8 @@ jobs:
           source-repo: https://github.com/silin001/docs.git
           # 注意替换为你的 Gitee 目标仓库地址
           # destination-repo: git@gitee.com:sisi001/docs.git
-          destination-repo: https://gitee.com/sisi001/docs
+          # destination-repo: https://gitee.com/sisi001/docs
+          destination-repo: https://gitee.com/sisi001/docs.git
 
       # - name: Sync to Gitee
       #   uses: Yikun/hub-mirror-action@master

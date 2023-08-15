@@ -1,6 +1,6 @@
-# vuePress-blog
+# vuePress
 
-基于vuePress开发个人博客
+基于vuePress开发个人文档系统
 
 ## 部署到自己的 github pages
 
