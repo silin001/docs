@@ -1,0 +1,44 @@
+# name: deploy
+# on: [push]  // 推送代码触发脚本
+# jobs:
+#   build-and-deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: Checkout
+#       uses: actions/checkout@master
+
+#     - name: vuepress-deploy
+#       uses: jenkey2011/vuepress-deploy@master
+#       env:
+#         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} // github Token
+#         TARGET_REPO: silin001/silin001.github.io  // 仓库
+
+#         TARGET_BRANCH: main    // build 之后推到的分支名
+#         BUILD_SCRIPT: yarn && yarn build
+#         BUILD_DIR: src/.vuepress/dist/     //build 之后的目录
+# ------------
+name: vuepress CICD
+on: [push]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 获取源码
+        uses: actions/checkout@v3
+      - name: 安装node并指定版本
+        uses: actions/setup-node@v3 # 安装node
+        with:
+          node-version: "16.x" # 指定node版本 不指定使用默认版本
+      # - name: -----测试输出
+      #   run: |
+      #     node -v
+      #     npm -v
+      #     echo '哈哈哈哈'
+      - run: yarn
+      - run: yarn build
+      - name: 部署到gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_dir: docs/.vuepress/dist # 部署打包后的 dist 目录
+          github_token: ${{ secrets.DEPLOY_SECRET }} #  secret 名称
+          commit_message: 自动部署(cicd) # 部署时的 git 提交信息，自由填写
