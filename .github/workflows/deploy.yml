@@ -10,7 +10,22 @@ jobs:
         uses: actions/setup-node@v3 # 安装node
         with:
           node-version: "16.x" # 指定node版本 不指定使用默认版本
-      - run: yarn
+      # 为node_modules设置缓存
+      - name: Cache缓存node_modules
+        # 缓存命中结果会存储在steps.[id].outputs.cache-hit里，该变量在继后的step中可读
+        id: cache-dependencies
+        uses: actions/cache@v3
+        with:
+          # 缓存文件目录的路径
+          path: |
+            **/node_modules
+          key: ${{runner.OS}}
+      # 安装依赖
+      - name: install安装依赖
+        # 如果命中缓存，就不需要安装依赖，使用缓存即可
+        if: steps.cache-dependencies.outputs.cache-hit != 'true'
+        run: yarn
+
       - run: yarn build
       - name: 部署到github-gh-pages
         uses: peaceiris/actions-gh-pages@v3
