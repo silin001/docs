@@ -25,39 +25,39 @@ export default defineUserConfig({
 
     // sidebar: 'auto', // 侧边栏配置
     // 导航栏配置
-    navbar:[
-        {
-          text: '首页',
-          link: '/'
-        },
-        {
-          text: '文档相关',
-          children: [
-            { text: 'vue2官网', link: 'https://v2.cn.vuejs.org/' },
-            { text: 'vue3官网', link: 'https://cn.vuejs.org/' },
-            { text: '百度一下', link: 'https://www.baidu.com/' },
-          ]
-        },
-        {
-          text: 'Vue2 相关',
-          children: [
-            { text: 'vue2源码探秘', link: '/vue/vue2/ym01' }
-          ]
-        },
-        {
-          text: '关于我',
-          children: [
-            { text: '格言', link: '/my/my' },
-            {
-              text: '掘金',
-              link: 'https://juejin.cn/user/2041110775208184/posts'
-            },
-            {
-              text: 'GitHub',
-              link: 'https://github.com/silin001'
-            },
-          ]
-        },
+    navbar: [
+      {
+        text: '首页111',
+        link: '/'
+      },
+      {
+        text: '文档相关',
+        children: [
+          { text: 'vue2官网', link: 'https://v2.cn.vuejs.org/' },
+          { text: 'vue3官网', link: 'https://cn.vuejs.org/' },
+          { text: '百度一下', link: 'https://www.baidu.com/' },
+        ]
+      },
+      {
+        text: 'Vue2 相关',
+        children: [
+          { text: 'vue2源码探秘', link: '/vue/vue2/ym01' }
+        ]
+      },
+      {
+        text: '关于我',
+        children: [
+          { text: '格言', link: '/my/my' },
+          {
+            text: '掘金',
+            link: 'https://juejin.cn/user/2041110775208184/posts'
+          },
+          {
+            text: 'GitHub',
+            link: 'https://github.com/silin001'
+          },
+        ]
+      },
     ],
     // 博客配置
     blogConfig: {

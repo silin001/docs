@@ -1,14 +1,14 @@
 {
-  "name": "my-blog",
+  "name": "my-docs",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
-  "repository": "git@github.com:silin001/vuePress-blog.git",
-  "homepage": "https://silin001.github.io/vuePress-blog",
+  "repository": "git@github.com:silin001/docs.git",
+  "homepage": "https://silin001.github.io/docs",
   "author": "sisi <862956812@11.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "vuepress dev docs --temp .temp",
+    "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "d": "bash deploy.sh"
   },
