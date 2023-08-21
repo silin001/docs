@@ -1,79 +1,76 @@
-module.exports = {
-  title: 'S.',
-  description: '我的个人网站',
+
+import { defineUserConfig } from 'vuepress'
+import { recoTheme } from 'vuepress-theme-reco'
+
+export default defineUserConfig({
+  title: 's',
+  description: '尖椒土豆sss的博客',
+  port: 3333,
   // publicPath: '/sl/',
-  head: [ // 注入到当前页面的 HTML <head> 中的标签
-    // ['link', { rel: 'icon', href: '/logo.jpg' }], // 增加一个自定义的 favicon(网页标签的图标)
-  ],
   // 默认 /  https://<USERNAME or GROUP>.github.io/
   // 如果你打算发布到 https://<USERNAME or GROUP>.github.io/<REPO>/（也就是说你的仓库在 https://github.com/<USERNAME>/<REPO>），则将 base 设置为 "/<REPO>/"。
   base: '/docs/',
-  markdown: {
-    lineNumbers: false // 代码块显示行号
-  },
-  themeConfig: {
-    // 导航栏配置
-    nav: [
-      {
-        text: '首页',
-        link: '/'
+  // 导航栏配置
+  // navbar: [
+  //   { text: '指南', link: '/docs/guide/introduce', icon: 'Compass' }
+  // ],
+  nav: [
+    {
+      text: '首页',
+      link: '/'
+    },
+    {
+      text: '文档相关',
+      items: [
+        { text: 'vue2官网', link: 'https://v2.cn.vuejs.org/' },
+        { text: 'vue3官网', link: 'https://cn.vuejs.org/' },
+        { text: '百度一下', link: 'https://www.baidu.com/' },
+      ]
+    },
+    {
+      text: 'Vue2 相关',
+      items: [
+        { text: 'vue2源码探秘', link: '/vue/vue2/ym01' }
+      ]
+    },
+    {
+      text: '关于我',
+      items: [
+        { text: '格言', link: '/my/my' },
+        {
+          text: '掘金',
+          link: 'https://juejin.cn/user/2041110775208184/posts'
+        },
+        {
+          text: 'GitHub',
+          link: 'https://github.com/silin001'
+        },
+      ]
+    },
+  ], 
+  theme: recoTheme({
+    type: "blog",
+    // author: "尖椒土豆sss",
+    // logo: "/avatar.jpg",
+    // authorAvatar: "/avatar.jpg",
+    // 内置搜索
+    search: true,
+    searchMaxSuggestions: 10,
+    // 子侧边栏
+    // subSidebar: 'auto',
+
+    // sidebar: 'auto', // 侧边栏配置
+    // 博客配置
+    blogConfig: {
+      category: {
+        location: 2, // 在导航栏菜单中所占的位置，默认2
+        text: "技术博客", // 默认文案 “分类”
       },
-      {
-        text: '文档相关',
-        items: [
-          { text: 'vue2官网', link: 'https://v2.cn.vuejs.org/' },
-          { text: 'vue3官网', link: 'https://cn.vuejs.org/' },
-          { text: '百度一下', link: 'https://www.baidu.com/' },
-        ]
+      tag: {
+        location: 4, // 在导航栏菜单中所占的位置，默认4
+        text: "Tag", // 默认文案 “标签”
       },
-      {
-        text: 'Vue2 相关',
-        items: [
-          { text: 'vue2源码探秘', link: '/vue/vue2/ym01' }
-        ]
-      },
-      {
-        text: '掘金',
-        link: 'https://juejin.cn/user/2041110775208184/posts'
-      },
-      {
-        text: 'GitHub',
-        link: 'https://github.com/silin001'
-      },
-      {
-        text: '关于我',
-        link: '/my/my'
-      },
-    ],
-    sidebar: 'auto', // 侧边栏配置
-    // sidebarDepth: 2, // 侧边栏显示2级
-    // sidebar: false,
-    // sidebar: [
-      // {
-      //   title: '软件资源11',
-      //   children: ['/软件资源/软件资源'],
-      //   initialOpenGroupIndex: 1 // 可选的, 默认值是 0
-      // }
-    // ]
-    // sidebar: {
-    //   '/': [
-    //     {
-    //       title: '测试目录1',
-    //     },
-    //     {
-    //       title: '测试目录2',
-    //       children: [
-    //         {
-    //           title: '333'
-    //         }
-    //       ]
-    //     },
-    //   ],
-    //   '/vue相关/vue2/': [
-    //     {
-    //       title: '22',
-    //     }
-    //   ],
-    // }
-  }
-};
+    },
+  })
+})
+

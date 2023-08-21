@@ -23,7 +23,7 @@
  无论是 windows cmd 还是 powershell，都无法直接运行 bash 脚本文件
  cmd中执行报错：  `Enter: command not found`
 
-不推荐，部署完gitee仓库还需要手动发布更新。
+ 不推荐，部署完gitee仓库还需要手动发布更新。
 
 ## 同步gitee及自动更新gitee pages
 

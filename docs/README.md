@@ -1,19 +1,41 @@
 ---
 home: true
-heroText: 一个分享各类资源的地方
-tagline: 公众号：资料分享大师
-actionText: 开始
-actionLink: /vue/vue2/ym01.md
-features:
-  - title: 网盘资源
-    details: 所有网盘资源均来自互联网，本网站不生产任何网盘资源，网盘资源是否失效需要自行判断。
-  - title: 黑科技软件
-    details: 主要分享一些实用性的工具类、影视类、音乐类等等各种软件，均由互联网大佬提供。
-  - title: 教程资源
-    details: 分享各类教程，包括编程、各类证书考试资源等等，本网站所有教程资源均来自互联网，若涉及侵权立马删除！
-footer: 科技趣玩 | 资料分享大师
----
+modules: # 指定首页展示模块
+  - Banner
+  # - bannerBrand
+  # - Blog
+  - MdContent
+  - Footer
+banner: # banner 模块的配置
+  heroText: test
+  tagline: Enjoy when you can, and endure when you must.
+  # heroImage: /img/logo.png
+  # heroImageStyle:
+  #   maxWidth: 200px
+  #   margin: 0 auto 2rem
+  bgImage: /img/bg.svg
+  bgImageStyle:
+    height: 100vh
+bannerBrand: # bannerBrand 模块的配置
+  title: vuepress-reco
+  description: 一款简洁的 vuepress 博客 & 文档 主题。
+  tagline: vuepress-theme-reco 2.0 继续坚持简洁的风格，所有功能开箱即用，首页模块化组装，使用 tailwindcss 书写样式，将 Vite 作为默认编译器。你只需要负责内容创作，其他请交给我。
+  buttons:
+    - { text: Guide, link: '/docs/guide/introduce' }
+    - { text: Default Style, link: '/docs/theme/introduce', type: 'plain' }
+  socialLinks: # 社交地址
+    - { icon: 'BrandGithub', link: 'https://github.com/recoluan' }
 
-mac 测试 1111 6666666666666
+blog: # blog 模块的配置
+  socialLinks: # 社交地址
+    - { icon: 'BrandGithub', link: 'https://github.com/recoluan' }
+
+footer: # 底部模块的配置
+  record: 域名备案文案
+  recordLink: 域名备案地址
+  cyberSecurityRecord: 公安备案文案
+  cyberSecurityLink: 公安备案地址
+  startYear: 2018
+---
 
 <!-- 首页配置页 -->
