@@ -9,7 +9,7 @@ jobs:
       - name: 安装node并指定版本
         uses: actions/setup-node@v3 # 安装node
         with:
-          node-version: "16.x"
+          node-version: "18.x"
       # 为node_modules设置缓存
       - name: cache缓存node_modules
         # 缓存命中结果会存储在steps.[id].outputs.cache-hit里，该变量在继后的step中可读
