@@ -10,44 +10,8 @@ export default defineUserConfig({
   // 默认 /  https://<USERNAME or GROUP>.github.io/
   // 如果你打算发布到 https://<USERNAME or GROUP>.github.io/<REPO>/（也就是说你的仓库在 https://github.com/<USERNAME>/<REPO>），则将 base 设置为 "/<REPO>/"。
   base: '/docs/',
-  // 导航栏配置
-  // navbar: [
-  //   { text: '指南', link: '/docs/guide/introduce', icon: 'Compass' }
-  // ],
-  nav: [
-    {
-      text: '首页',
-      link: '/'
-    },
-    {
-      text: '文档相关',
-      items: [
-        { text: 'vue2官网', link: 'https://v2.cn.vuejs.org/' },
-        { text: 'vue3官网', link: 'https://cn.vuejs.org/' },
-        { text: '百度一下', link: 'https://www.baidu.com/' },
-      ]
-    },
-    {
-      text: 'Vue2 相关',
-      items: [
-        { text: 'vue2源码探秘', link: '/vue/vue2/ym01' }
-      ]
-    },
-    {
-      text: '关于我',
-      items: [
-        { text: '格言', link: '/my/my' },
-        {
-          text: '掘金',
-          link: 'https://juejin.cn/user/2041110775208184/posts'
-        },
-        {
-          text: 'GitHub',
-          link: 'https://github.com/silin001'
-        },
-      ]
-    },
-  ], 
+
+
   theme: recoTheme({
     type: "blog",
     // author: "尖椒土豆sss",
@@ -60,6 +24,41 @@ export default defineUserConfig({
     // subSidebar: 'auto',
 
     // sidebar: 'auto', // 侧边栏配置
+    // 导航栏配置
+    navbar:[
+        {
+          text: '首页',
+          link: '/'
+        },
+        {
+          text: '文档相关',
+          children: [
+            { text: 'vue2官网', link: 'https://v2.cn.vuejs.org/' },
+            { text: 'vue3官网', link: 'https://cn.vuejs.org/' },
+            { text: '百度一下', link: 'https://www.baidu.com/' },
+          ]
+        },
+        {
+          text: 'Vue2 相关',
+          children: [
+            { text: 'vue2源码探秘', link: '/vue/vue2/ym01' }
+          ]
+        },
+        {
+          text: '关于我',
+          children: [
+            { text: '格言', link: '/my/my' },
+            {
+              text: '掘金',
+              link: 'https://juejin.cn/user/2041110775208184/posts'
+            },
+            {
+              text: 'GitHub',
+              link: 'https://github.com/silin001'
+            },
+          ]
+        },
+    ],
     // 博客配置
     blogConfig: {
       category: {
