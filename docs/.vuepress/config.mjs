@@ -7,9 +7,7 @@ import { recoTheme } from 'vuepress-theme-reco'
 // const vuepressTheme  = require('vuepress-theme-reco')
 export default defineUserConfig({
   // module.exports = {
-  title: 'sss',
-  description: '尖椒土豆sss的博客',
-  port: 3333,
+
   // publicPath: '/sl/',
   // 默认 /  https://<USERNAME or GROUP>.github.io/
   // 如果你打算发布到 https://<USERNAME or GROUP>.github.io/<REPO>/（也就是说你的仓库在 https://github.com/<USERNAME>/<REPO>），则将 base 设置为 "/<REPO>/"。

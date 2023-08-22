@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:silin001/docs.git",
-  "homepage": "https://silin001.github.io/docs",
+  "homepage": "https://silin001.github.io/docs/",
   "author": "sisi <862956812@11.com>",
   "license": "MIT",
   "scripts": {
