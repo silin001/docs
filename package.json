@@ -2,6 +2,7 @@
   "name": "my-docs",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "repository": "git@github.com:silin001/docs.git",
   "homepage": "https://silin001.github.io/docs",
   "author": "sisi <862956812@11.com>",
