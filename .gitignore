@@ -3,6 +3,7 @@ node_modules
 /dist
 dist
 .temp
+.cache
 .history
 # local env files
 .env.local

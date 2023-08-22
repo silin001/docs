@@ -1,10 +1,11 @@
 ---
-title: 使用 Dockerfile + Docker Compose 部署 Web 项目
-date: 2023-06-06
-isShowComments: true    # 展示评论
-categories:     # 分类
- - 技术博客
-tags:       # 标签
+title: vue2.0 相关实现原理记录
+date: 2021-02-25
+sticky: 1 # 文章排序
+categories:  # 分类
+ - vue2源码
+tags:
+ - vue2
 ---
 # vue2.0 相关实现原理记录
 ## vue底层渲染过程大致可以分成4个阶段：

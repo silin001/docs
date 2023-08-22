@@ -2,13 +2,13 @@
 home: true
 modules: # 指定首页展示模块
   - Banner
-  # - bannerBrand
-  # - Blog
+  - bannerBrand
+  - Blog
   - MdContent
-  - Footer
+  # - Footer
 banner: # banner 模块的配置
-  heroText: test
-  tagline: Enjoy when you can, and endure when you must.
+  heroText: 
+  tagline: 
   # heroImage: /img/logo.png
   # heroImageStyle:
   #   maxWidth: 200px
@@ -16,21 +16,25 @@ banner: # banner 模块的配置
   bgImage: /img/bg.svg
   bgImageStyle:
     height: 100vh
-bannerBrand: # bannerBrand 模块的配置
-  title: vuepress-reco
-  description: 一款简洁的 vuepress 博客 & 文档 主题。
-  tagline: vuepress-theme-reco 2.0 继续坚持简洁的风格，所有功能开箱即用，首页模块化组装，使用 tailwindcss 书写样式，将 Vite 作为默认编译器。你只需要负责内容创作，其他请交给我。
+    position: absolute
+    zIndex: -1
+# bannerBrand 模块的配置
+bannerBrand:
+  title: Blog
+  description: 学习、记录、分享
+  tagline: 生活不可能像你想象的那么好，但是也不会像你想象中那么糟。人的脆弱和坚强都超乎自己的想象， 有时候脆弱的一句话就泪流满面，有时候你发现自己咬着牙已经走过了很长的路 — 莫泊桑《一生》
   buttons:
-    - { text: Guide, link: '/docs/guide/introduce' }
-    - { text: Default Style, link: '/docs/theme/introduce', type: 'plain' }
+    # - { text: 关于我, link: '/my/my' }
   socialLinks: # 社交地址
-    - { icon: 'BrandGithub', link: 'https://github.com/recoluan' }
+    - { icon: 'BrandGithub11', link: 'https://github.com/recoluan' }
 
-blog: # blog 模块的配置
+ # blog 模块的配置
+blog:
   socialLinks: # 社交地址
-    - { icon: 'BrandGithub', link: 'https://github.com/recoluan' }
+    - { icon: 'BrandGithub22', link: 'https://github.com/recoluan' }
 
-footer: # 底部模块的配置
+# 底部模块的配置
+footer:
   record: 域名备案文案
   recordLink: 域名备案地址
   cyberSecurityRecord: 公安备案文案
