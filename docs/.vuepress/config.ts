@@ -1,13 +1,12 @@
 // CommonJS 模块使用 require() 和 module.exports
 // ES6 模块使用 import 和 export 。
-// const { recoTheme } = require("vuepress-theme-reco");
-// import { defineUserConfig } from "vuepress";
 console.log('ts config')
+import { defineUserConfig } from "vuepress";
 import { recoTheme } from "vuepress-theme-reco";
-// export default defineUserConfig({
-  module.exports = {
+export default defineUserConfig({
+// module.exports = {
   title: "sts1",
-  description: "尖椒土豆sss的博客",
+  // description: "尖椒土豆sss的博客",
   port: 3333,
   base: "/docs/",
   // publicPath: '/sl/',
@@ -19,8 +18,9 @@ import { recoTheme } from "vuepress-theme-reco";
     type: "blog",
     author: "尖椒土豆sss",
     logo: "/img/avatar.png",
-    authorAvatar: "/img/avatar.png",
-    colorMode: "dark", // dark, light
+    // authorAvatar: "/img/avatar.png",
+    // colorMode: "dark", // dark, light
+    // colorMode: "light", // dark, light
     // 自动设置分类
     autoSetBlogCategories: true,
     // 自动将分类和标签添加至头部导航条
@@ -32,8 +32,8 @@ import { recoTheme } from "vuepress-theme-reco";
     // 自动设置系列
     // autoSetSeries: true,
     // 内置搜索
-    search: true,
-    searchMaxSuggestions: 10,
+    // search: true,
+    // searchMaxSuggestions: 10,
     // 导航栏配置
     navbar: [
       {
@@ -96,5 +96,5 @@ import { recoTheme } from "vuepress-theme-reco";
       },
     ],
   }),
-  }
-// });
+  // }
+});
