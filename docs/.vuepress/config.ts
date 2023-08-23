@@ -1,8 +1,9 @@
 // CommonJS 模块使用 require() 和 module.exports
 // ES6 模块使用 import 和 export 。
+// const { recoTheme } = require("vuepress-theme-reco");
 // import { defineUserConfig } from "vuepress";
-// import { recoTheme } from "vuepress-theme-reco";
-const { recoTheme } = require("vuepress-theme-reco");
+console.log('ts config')
+import { recoTheme } from "vuepress-theme-reco";
 // export default defineUserConfig({
   module.exports = {
   title: "sts",
