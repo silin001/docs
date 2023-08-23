@@ -2,8 +2,9 @@
 node_modules
 /dist
 dist
+docs/.vuepress/.cache
+docs/.vuepress/.temp
 .temp
-.cache
 .history
 # local env files
 .env.local
