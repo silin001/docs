@@ -9,17 +9,17 @@ jobs:
       - name: 安装node并指定版本
         uses: actions/setup-node@v3 # 安装node
         with:
-          node-version: "14.x"
+          node-version: "17.x"
       # 为node_modules设置缓存
-      # - name: cache缓存node_modules
-      #   # 缓存命中结果会存储在steps.[id].outputs.cache-hit里，该变量在继后的step中可读
-      #   id: cache-dependencies
-      #   uses: actions/cache@v3
-      #   with:
-      #     # 缓存文件目录的路径
-      #     path: |
-      #       **/node_modules
-      #     key: ${{runner.OS}}
+      - name: cache缓存node_modules
+        # 缓存命中结果会存储在steps.[id].outputs.cache-hit里，该变量在继后的step中可读
+        id: cache-dependencies
+        uses: actions/cache@v3
+        with:
+          # 缓存文件目录的路径
+          path: |
+            **/node_modules
+          key: ${{runner.OS}}
       # 安装依赖
       - name: install安装依赖
         # 如果命中缓存，就不需要安装依赖，使用缓存即可
