@@ -6,7 +6,7 @@ console.log('ts config')
 import { recoTheme } from "vuepress-theme-reco";
 // export default defineUserConfig({
   module.exports = {
-  title: "sts",
+  title: "sts1",
   description: "尖椒土豆sss的博客",
   port: 3333,
   base: "/docs/",
