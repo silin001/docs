@@ -1,18 +1,11 @@
 
-// CommonJS 模块使用 require() 和 module.exports
-// ES6 模块使用 import 和 export 。
 import { defineUserConfig } from 'vuepress'
 import { recoTheme } from 'vuepress-theme-reco'
-
-// const vuepressTheme  = require('vuepress-theme-reco')
 export default defineUserConfig({
-  // module.exports = {
-
   // publicPath: '/sl/',
   // 默认 /  https://<USERNAME or GROUP>.github.io/
   // 如果你打算发布到 https://<USERNAME or GROUP>.github.io/<REPO>/（也就是说你的仓库在 https://github.com/<USERNAME>/<REPO>），则将 base 设置为 "/<REPO>/"。
   base: '/docs/',
-  // base: '/',
 
   theme: recoTheme({
     type: "blog",
@@ -29,7 +22,7 @@ export default defineUserConfig({
       tagText: '标签' // 默认 tags
     },
     // 自动设置系列
-    // autoSetSeries: true,
+    autoSetSeries: true,
     // 内置搜索
     search: true,
     searchMaxSuggestions: 10,
@@ -95,5 +88,4 @@ export default defineUserConfig({
       },
     ],
   })
-  // }
 })
