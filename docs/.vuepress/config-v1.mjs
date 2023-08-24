@@ -1,7 +1,8 @@
+
 import { defineUserConfig } from "vuepress";
 import { recoTheme } from "vuepress-theme-reco";
 export default defineUserConfig({
-  title: "sss",
+  title: "sss测试",
   port: 3333,
   base: "/docs/",
   theme: recoTheme({

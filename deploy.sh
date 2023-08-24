@@ -10,7 +10,7 @@ cd docs/.vuepress/dist
 
 git init
 git add -A
-git commit -m '手动部署'
+git commit -m "使用.sh文件部署"
 
 # 发布到gh-pages分支
 git push -f git@github.com:silin001/docs.git main:gh-pages
