@@ -5,8 +5,9 @@ export default defineUserConfig({
   // publicPath: '/sl/',
   // 默认 /  https://<USERNAME or GROUP>.github.io/
   // 如果你打算发布到 https://<USERNAME or GROUP>.github.io/<REPO>/（也就是说你的仓库在 https://github.com/<USERNAME>/<REPO>），则将 base 设置为 "/<REPO>/"。
-  base: '/docs/',
-
+  title: "sss.mjs",
+  port: 3333,
+  base: "/docs/",
   theme: recoTheme({
     type: "blog",
     author: "尖椒土豆sss",
