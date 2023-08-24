@@ -12,7 +12,6 @@ export default defineUserConfig({
     author: "尖椒土豆sss",
     logo: "/img/avatar.png",
     authorAvatar: "/img/avatar.png",
-    colorMode: 'dark', // dark, light
     // 自动设置分类
     autoSetBlogCategories: true,
     // 自动将分类和标签添加至头部导航条
@@ -23,9 +22,6 @@ export default defineUserConfig({
     },
     // 自动设置系列
     autoSetSeries: true,
-    // 内置搜索
-    search: true,
-    searchMaxSuggestions: 10,
     // 导航栏配置
     navbar: [
       {
