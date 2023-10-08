@@ -7,8 +7,8 @@ modules: # 指定首页展示模块
   - MdContent
   # - Footer
 banner: # banner 模块的配置
-  heroText: 
-  tagline: 
+  heroText:
+  tagline:
   # heroImage: /img/logo.png
   # heroImageStyle:
   #   maxWidth: 200px
@@ -20,9 +20,9 @@ banner: # banner 模块的配置
     zIndex: -1
 # bannerBrand 模块的配置
 bannerBrand:
-  title: sBlog
+  title: sBlog111
   description: 学习、记录、分享
-  tagline: 生活不可能像你想象的那么好，但是也不会像你想象中那么糟。人的脆弱和坚强都超乎自己的想象， 有时候脆弱的一句话就泪流满面，有时候你发现自己咬着牙已经走过了很长的路 — 莫泊桑《一生》
+  tagline: 我们所做的一切，不是为了改变世界，而是不让世界改变我们！
   buttons:
     # - { text: 关于我, link: '/my/my' }
   socialLinks: # 社交地址
