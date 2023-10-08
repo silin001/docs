@@ -1,7 +1,7 @@
 import { defineUserConfig } from "vuepress";
 import { recoTheme } from "vuepress-theme-reco";
 export default defineUserConfig({
-  title: "sss",
+  title: "尖椒土豆sss",
   port: 3333,
   base: "/docs/",
   theme: recoTheme({
@@ -46,6 +46,10 @@ export default defineUserConfig({
           {
             text: "掘金",
             link: "https://juejin.cn/user/2041110775208184/posts",
+          },
+          {
+            text: "我的插件",
+            link: "/my/pluginZipPack",
           },
         ],
       },

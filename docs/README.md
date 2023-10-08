@@ -20,7 +20,7 @@ banner: # banner 模块的配置
     zIndex: -1
 # bannerBrand 模块的配置
 bannerBrand:
-  title: sBlog111
+  title: never too old to learn
   description: 学习、记录、分享
   tagline: 我们所做的一切，不是为了改变世界，而是不让世界改变我们！
   buttons:
