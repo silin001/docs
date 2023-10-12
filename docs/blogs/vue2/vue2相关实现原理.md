@@ -1,7 +1,7 @@
 ---
 title: vue2.0 相关实现原理记录
 date: 2021-02-25
-sticky: 1 # 文章排序
+# sticky: 1 # 文章排序
 categories:  # 分类
  - vue2源码
 tags:
