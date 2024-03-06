@@ -16,11 +16,11 @@ npm包地址：
 
 ## 安装
 
-`cnpm install plugin-zip-pack -D`
+`pnpm install plugin-zip-pack -D`
 
 or
 
-`npm install plugin-zip-pack -D`
+`cnpm install plugin-zip-pack -D`
 
 ## 参数配置
 
@@ -70,7 +70,7 @@ module.exports = {
 ```
 
 
-# 使用（1.0.17版本前）
+## 使用（1.0.17版本前）
 
 - vite
 
