@@ -6,21 +6,17 @@ tags:
  - 插件
 ---
 
-## 介绍
+## 插件简介
 
-`plugin-zip-pack` 源码使用ts编写（1.0.17版本前js），用于项目 webpack、vite build 结束后压缩打包指定目录资源为.zip 包
+`plugin-zip-pack` 源码使用ts编写（1.0.17版本前js），用于项目 webpack、vite build 结束后压缩打包指定目录资源为.zip 包。
 
-npm包地址：
-[plugin-zip-pack - npm (npmjs.com)](https://www.npmjs.com/package/plugin-zip-pack)
-
+- 新增打包结果推送消息到微信（需关注虾推啥公众号、获取token）
 
 ## 安装
 
-`pnpm install plugin-zip-pack -D`
+推荐 `pnpm install plugin-zip-pack -D`
 
-or
-
-`cnpm install plugin-zip-pack -D`
+`npm install plugin-zip-pack -D`
 
 ## 参数配置
 
@@ -29,7 +25,9 @@ or
  {
   optZipName: '测试包', // 必传参数，打包名称，
   targetDir: '', // 可选参数，需要打包的目录（必须传入存在的目录），默认 dist
-  enable: true // 可选参数，插件是否开启，默认true开启
+  enable: true, // 可选参数，插件是否开启，默认true开启
+  isPushVx: false, // 可选参数，打包完成是否推送消息到微信（需配合 xtsToken使用），默认false
+  xtsToken: '', // 可选参数， 推送微信需要的公众号token
  },
 
 ```
@@ -104,5 +102,6 @@ module.exports = {
     }
 };
 ```
+
 
 
