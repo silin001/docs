@@ -1,0 +1,1 @@
+import{_ as e,o as t,c,b as o}from"./app-b9ba7d8c.js";const _={},s=o("p",null,"生活不可能像你想象的那么好，但是也不会像你想象中那么糟。人的脆弱和坚强都超乎自己的想象， 有时候脆弱的一句话就泪流满面，有时候你发现自己咬着牙已经走过了很长的路 ——— 莫泊桑《一生》",-1),n=[s];function r(a,l){return t(),c("div",null,n)}const d=e(_,[["render",r],["__file","my.html.vue"]]);export{d as default};
